@@ -19,5 +19,18 @@ class RegisterController extends Controller
         $lastName= $request["last_name"];
         //mengembalikan nilai dari nama dan menampilkan halaman selamat datang
         return view ('welcome', compact ("firstName", "lastName"));
-    }    
+    } 
+    
+    public function master(){
+        return view('adminLTE.master');
+    }
+
+    public function tabel(){
+        return view ('items.tabel');
+    }
+
+    public function dataTables(){
+        return view ('items.dataTables');
+    }
+    
 }
