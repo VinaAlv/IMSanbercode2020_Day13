@@ -15,6 +15,8 @@
   <link rel="stylesheet" href="{{asset('adminLTE/dist/css/adminlte.min.css')}}">
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+
+  @stack('style')
 </head>
 <body class="hold-transition sidebar-mini">
 <!-- Site wrapper -->
@@ -73,7 +75,7 @@
 <script src="{{asset('adminLTE/dist/js/demo.js')}}"></script>
 
 @stack('scripts')
-@stack('style')
+
 
 </body>
 </html>
