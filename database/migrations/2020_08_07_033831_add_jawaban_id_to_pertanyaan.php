@@ -29,6 +29,7 @@ class AddJawabanIdToPertanyaan extends Migration
         Schema::table('pertanyaan', function (Blueprint $table) {
             $table->dropForeign(['jawaban_id']);
             $table->dropColumn(['jawaban_id']);
+            
         });
     }
 }
