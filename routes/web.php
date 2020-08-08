@@ -34,6 +34,17 @@ Route::get('/master', 'RegisterController@master');
 Route::get('/', 'RegisterController@tabel');
 Route::get('/data-tables', 'RegisterController@dataTables');
 
+//CRUD
+
+Route::get('/pertanyaan/create', 'PertanyaanController@create');
+Route::post('/pertanyaan', 'PertanyaanController@store');
+Route::get('/pertanyaan', 'PertanyaanController@index');
+Route::get('/pertanyaan/{pertanyaan_id}', 'PertanyaanController@show');
+Route::get('/pertanyaan/{pertanyaan_id}/edit', 'PertanyaanController@edit');
+Route::put('/pertanyaan/{pertanyaan_id}', 'PertanyaanController@update');
+Route::delete('/pertanyaan/{pertanyaan_id}', 'PertanyaanController@destroy');
+
+
 // Route::get('/master', function(){
 //     return view('adminLTE.master');
 // });
